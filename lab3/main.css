@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fffbf0;
+  font-family: 'PT Serif', serif;
+}
+
+.banner {
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  height: 600px;
+  background: #fffbf0 url(banner.png) no-repeat top center / contain;
+}
+
+#nature__photo {
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+#main-heading {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a[href] {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+a[href]:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a[href]:hover {
+  cursor: pointer;
+  position: relative;
+}
+
+a[href]:hover:after {
+  width: 100%;
+}
+
+.my_image {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.my_name {
+  text-align: center;
+  transform: translateX(-1%);
+}
+
+.map {
+  width: 60%;
+  margin: 0 auto;
+  height: 10rem;
+  border: 1px solid black;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+}
