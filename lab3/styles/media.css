@@ -1,0 +1,40 @@
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    #nature__photo {
+        display: block;
+        width: 70%;
+    }
+    .my_image source,
+    .my_image img {
+        width: 70%;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+    nav {
+        flex-direction: row;
+    }
+    .menu {
+        width: 70%;
+    }
+    a[href] {
+        font-size: 1.5rem;
+      }
+    #nature__photo {
+        display: block;
+        max-width: 900px;
+    }
+}

@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/styles/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/media.css">
   <title>CSS Design</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
   <!-- Navbar -->
   <nav>
       <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="80px" height="80px">
+        <img src="/images/logo.png" alt="logo" width="80px" height="80px">
       </a>
       <ul class="menu">
         <li><a class="link" href="#task">Task</a></li>
@@ -37,7 +39,7 @@
     <article id="task">
       <h2 >Task</h2>
       <p>
-        <img id="nature__photo" src="nature.jpeg" alt="" width="200px" height="210">
+        <img id="nature__photo" src="/images/nature.jpeg" alt="" width="200px" height="210">
         As you have alredy learned in the last lecture, 
         CSS is about the presentation of the documents
         like HTML or XML.
@@ -61,7 +63,7 @@
         The main requirement for this task is to 
         style this HTML document without any 
         changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul>
+        <ul class="points">
           <li>
             You can add <strong>id</strong>
             and <strong>class</strong> 
@@ -87,7 +89,7 @@
       <p>
         In your stylesheet you <strong>must</strong>
          use these selectors:
-        <ul>
+        <ul class="points">
           <li>Element selectors;</li>
           <li>Class selectors;</li>
           <li>Attribute selectors;</li>
@@ -100,7 +102,7 @@
         use the necessary CSS properties
         and demonstrate the following changes
         of the elements:
-        <ul>
+        <ul class="points">
           <li>font and background colors;</li>
           <li>font family and size;</li>
           <li>margin, padding and borders;</li>
@@ -128,7 +130,20 @@
       <h3>Info</h3>
       <p>
          Insert an image of yourself here.
-         <img class="my_image" src="planets.jpeg" alt="" width="300px" height="210">
+         <picture class="my_image">
+          <source 
+            srcset="/images/planets-1024.webp"
+            src="/images/planets-1024.jpeg"
+            media="(min-width: 1024px)"
+          />
+          <img 
+            srcset="
+            /images/planets@2x.webp 2x,
+            /images/planets.webp"
+            src="/images/planets.jpeg"
+            alt="my image"
+          />
+        </picture>
 
         <ul>
           <li class="my_name">Altynay Turakhan</li>
